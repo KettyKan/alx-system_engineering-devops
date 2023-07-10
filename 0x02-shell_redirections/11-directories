@@ -1,6 +1,2 @@
 #!/bin/bash
-
-count=$(find . -type d -not -path '*/\.*' -print | wc -l)
-
-echo "Total directories and subdirectories (including hidden): $count"
-
+find . -mindepth 1 -type d | wc -1
